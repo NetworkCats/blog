@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+{{/* About Section - content from content/_index.md */}}
+<div id="About">
+  {{ .Content }}
+</div>
+
+{{/* Latest Posts Section */}}
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ if $posts }}
+<div id="LatestPosts">
+  <h2>最新文章</h2>
+  <ul>
+    {{ range first 10 $posts }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
+  {{ if gt (len $posts) 10 }}
+  <p class="more"><a href="{{ "posts/" | relURL }}">查看更多文章 &rarr;</a></p>
+  {{ end }}
+</div>
+{{ end }}
+
+{{ end }}

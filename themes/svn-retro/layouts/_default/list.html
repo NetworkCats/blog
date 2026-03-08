@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<div id="ArchiveList">
+  <h2>{{ .Title | default "所有文章" }}</h2>
+  <ul>
+    {{ range .Paginator.Pages }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
+</div>
+
+{{/* Pagination */}}
+{{ $paginator := .Paginator }}
+{{ if gt $paginator.TotalPages 1 }}
+<div class="pagination">
+  {{ if $paginator.HasPrev }}
+  <a href="{{ $paginator.Prev.URL }}">&larr; 上一页</a>
+  {{ end }}
+
+  <span class="current">第 {{ $paginator.PageNumber }} / {{ $paginator.TotalPages }} 页</span>
+
+  {{ if $paginator.HasNext }}
+  <a href="{{ $paginator.Next.URL }}">下一页 &rarr;</a>
+  {{ end }}
+</div>
+{{ end }}
+
+{{ end }}

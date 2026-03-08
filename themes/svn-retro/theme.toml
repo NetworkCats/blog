@@ -1,0 +1,11 @@
+# Theme metadata
+name = "svn-retro"
+license = "MIT"
+licenselink = "https://github.com/your-username/svn-retro/blob/main/LICENSE"
+description = "A minimalist Hugo theme inspired by early 2000s blog aesthetics"
+tags = ["blog", "minimal", "retro"]
+min_version = "0.100.0"
+
+[author]
+  name = ""
+  homepage = ""

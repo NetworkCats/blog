@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "zh-cn" }}">
+<head>
+  {{- partial "head.html" . -}}
+</head>
+<body>
+  <div id="Container">
+    {{- partial "header.html" . -}}
+    <div id="Content">
+      {{- block "main" . }}{{- end }}
+    </div>
+    {{- partial "footer.html" . -}}
+  </div>
+</body>
+</html>

@@ -1,0 +1,3 @@
+<div id="Footer">
+  <p>{{ with .Site.Params.copyright }}{{ . | safeHTML }}{{ else }}&copy; {{ now.Year }} {{ .Site.Title }}{{ end }}</p>
+</div>
