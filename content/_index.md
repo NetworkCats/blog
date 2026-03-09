@@ -13,12 +13,12 @@ title: "首页"
 
 我运行的服务：
 
-- ip.nc.gy
+- [ip.nc.gy](https://ip.nc.gy)
 
 我的其它账号:
 
-Hacker News: `@networkcat`
+Hacker News: [@networkcat](https://news.ycombinator.com/user?id=networkcat)
 
-V2EX: `@nc`
+V2EX: [@nc](https://www.v2ex.com/member/nc)
 
-GitHub: `@networkcats`
+GitHub: [@networkcats](https://github.com/networkcats)
