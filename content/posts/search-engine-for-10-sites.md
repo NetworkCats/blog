@@ -1,5 +1,5 @@
 ---
-date: '2026-05-24'
+date: '2026-05-23'
 draft: false
 title: '只索引10个网站的搜索引擎'
 slug: 'search-engine-for-10-sites'
